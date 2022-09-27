@@ -3,10 +3,14 @@
   <img src="references/readme_figs/banner.png" width="950" title="Project Banner">
 </p>
 
-[![License: CC BY-NC 4.0](https://licensebuttons.net/l/by-nc/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc/4.0/)
-[![Known Vulnerabilities](https://snyk.io/test/github/{username}/{repo}/badge.svg)]
-
-
+[![DOI](https://zenodo.org/badge/259046250.svg)](https://zenodo.org/badge/latestdoi/259046250) 
+[![Coverage Status](https://coveralls.io/repos/github/Sulstice/global-chem/badge.svg?branch=master)](https://coveralls.io/github/Sulstice/global-chem?branch=master) 
+[![Build Status](https://app.travis-ci.com/Sulstice/global-chem.svg?branch=master)](https://app.travis-ci.com/Sulstice/global-chem) 
+![Repo Size](https://img.shields.io/github/repo-size/Sulstice/global-chem) 
+![Known Vulnerabilities](https://snyk.io/test/github/aalling93/Deep-Quantile-Regression-Synthetic-Aperture-Radar-Ship-Size/badge.svg) 
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSulstice%2Fglobal-chem.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FSulstice%2Fglobal-chem?ref=badge_shield) 
+[![Downloads](https://pepy.tech/badge/global-chem)](https://pepy.tech/project/global-chem)
+![Python](https://img.shields.io/badge/python-3.9-blue.svg)
 
 # Brief Description
  <a class="anchor" id="Introduction"></a>
@@ -15,6 +19,7 @@ A facncy introduction
 - What your application does,
 - Why you used the technologies you used,
 - Some of the challenges you faced and features you hope to implement in the future.
+See More here [![Documentation](https://img.shields.io/badge/GitBook-Docu-lightblue)](https://sulstice.gitbook.io/globalchem-your-chemical-graph-network/)
 
 
 # Table Of Contents
