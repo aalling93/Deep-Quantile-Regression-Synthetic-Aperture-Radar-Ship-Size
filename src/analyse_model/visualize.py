@@ -1,10 +1,8 @@
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
-from matplotlib import rc
-import matplotlib.pyplot as plt
-import numpy as np
 import scipy.stats as stats
+from matplotlib import rc
 
 #
 COLORMAP = "turbo"

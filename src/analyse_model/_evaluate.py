@@ -135,7 +135,6 @@ def get_mean_abs_error_size_distribution(
     errors_w = errors_w.join(dfci_w.set_index("bins"), on="bin_w")
     errors_w.ci_lower = errors_w.ci_lower.astype("float")
     errors_w.ci_upper = errors_w.ci_upper.astype("float")
-    errors_l = errors_l
-    errors_w = errors_w
+
 
     return errors_l, errors_w
