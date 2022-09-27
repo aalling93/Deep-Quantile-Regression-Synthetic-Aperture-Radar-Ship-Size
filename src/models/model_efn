@@ -1,0 +1,21 @@
+
+def build_model(input_size_img=(128, 128, 1),input_size_metadata=(3), model_class=None):
+    inputs_meta = tf.keras.layers.Input(
+            input_size_metadata, name="inputs_meta"
+        )
+
+    inputs_img_vh = tf.keras.layers.Input(input_size_img, name="inputs_vv")
+    inputs_img_vv = tf.keras.layers.Input(input_size_img, name="inputs_vh")
+    base_vv = efn.EfficientNetB6(input_shape=input_size_img,weights=None,include_top=False)(inputs_img_vv)
+    base_vh = efn.EfficientNetB7(input_shape=input_size_img,weights=None,include_top=False)(inputs_img_vh)
+    base = tf.keras.layers.Concatenate()([base_vv, base_vh]) 
+    base = tf.keras.layers.GlobalAveragePooling2D()(base)
+    
+    x = tf.keras.layers.Concatenate()([base, inputs_meta]) 
+    x = tf.keras.layers.Dropout(0.5)(x) 
+    x = tf.keras.layers.Dense(3)(x)
+    model = tf.keras.Model([inputs_img_vv, inputs_img_vh,inputs_meta] , x)
+
+    return model
+
+mmodel = build_model(dataset["imgs_training_clipped_scaled"][0,:,:,0:1].shape,dataset["metadata_training_scaled"][0,-2:].shape)
