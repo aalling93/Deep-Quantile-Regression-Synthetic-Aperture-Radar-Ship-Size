@@ -7,7 +7,8 @@
 [![Coverage Status](https://coveralls.io/repos/github/Sulstice/global-chem/badge.svg?branch=master)](https://coveralls.io/github/Sulstice/global-chem?branch=master) 
 [![Build Status](https://app.travis-ci.com/Sulstice/global-chem.svg?branch=master)](https://app.travis-ci.com/Sulstice/global-chem) 
 ![Repo Size](https://img.shields.io/github/repo-size/Sulstice/global-chem) 
-![Known Vulnerabilities](https://snyk.io/test/github/aalling93/Deep-Quantile-Regression-Synthetic-Aperture-Radar-Ship-Size/badge.svg) 
+[![Known Vulnerabilities](https://snyk.io/test/github/aalling93/Deep-Quantile-Regression-Synthetic-Aperture-Radar-Ship-Size//badge.svg)](https://snyk.io/test/github/aalling93/Deep-Quantile-Regression-Synthetic-Aperture-Radar-Ship-Size/)
+
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSulstice%2Fglobal-chem.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FSulstice%2Fglobal-chem?ref=badge_shield) 
 [![Downloads](https://pepy.tech/badge/global-chem)](https://pepy.tech/project/global-chem)
 ![Python](https://img.shields.io/badge/python-3.9-blue.svg)
