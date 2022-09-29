@@ -34,7 +34,7 @@ Conversly, if we have a length estiamte of 200 m with a Confidense Interval of [
 Specifically, deterministic models might over estiamte the length to be, e.g., 800 m long which is impossible. If we had an automatic way of saying "this is a bad estiamte", we could just neglegt it somewhat. 
 
 
-In The Figure below, we see to estiamtes from our model. One of which is clear and the other is not. We see  how the 95CI varies greatly.
+In The Figure below, we see t2o estimates from our model. One of which is clear and the other is not. We see  how the 95CI varies greatly.
 
 
 
