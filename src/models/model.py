@@ -110,7 +110,7 @@ class Model:
         if self.which_model.lower() == "fcn_quantile":
             training_history = self.model.model.fit(
             [self.train_images, self.train_metadata[:, -2:]],
-            [self.train_target[0], self.train_target[1], self.train_target[2]],
+            [self.train_target[:,0], self.train_target[:,1], self.train_target[:,2]],
             batch_size=self.batch_size,
             epochs=epochs,
             verbose=verbose)

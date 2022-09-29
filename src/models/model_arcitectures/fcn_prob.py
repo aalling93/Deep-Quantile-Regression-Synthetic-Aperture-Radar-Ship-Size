@@ -11,14 +11,14 @@ tfn = tfp.experimental.nn
 
 
 
-class fcn_quantile:
+class fcn_quantile_dropout:
     def __init__(
         self,
         input_size_img: tuple = (2,),
         input_size_metadata: tuple = (2,),
-        name: str = "fcn_quantile",
+        name: str = "fcn_quantile_dropout",
     ):
-        super(fcn_quantile, self).__init__()
+        super(fcn_quantile_dropout, self).__init__()
 
 
         self.input_size_metadata = input_size_metadata
@@ -48,8 +48,8 @@ class fcn_quantile:
         perc_points = [0.5, 0.25, 0.5, 0.75,0.95]
         if len(name) > 1:
             self.name = name
-        inputs_img = tf.keras.layers.Input((None,None,2), name="inputs_img")
-        #inputs_img_vv = tf.keras.layers.Input((None,1), name="inputs_img") , ragged=False
+        inputs_img = tf.keras.layers.Input((None,None,2), ragged=False, name="inputs_img")
+        #inputs_img_vv = tf.keras.layers.Input((None,1), name="inputs_img")
         #inputs_img_vh = tf.keras.layers.Input((None,1), name="inputs_img")
         
         #vv = tf.keras.layers.Reshape((len(inputs_img_vv)/2,len(inputs_img_vv)/2,-1))(inputs_img_vv)
@@ -67,18 +67,18 @@ class fcn_quantile:
         model1 = tf.keras.layers.Conv2D(256, (5, 5), padding="SAME")(inputs_img)
         
         model1 = tf.keras.activations.elu(model1, alpha)
-        model1 = tf.keras.layers.Dropout(Dropout_tcnn)(model1)
+        model1 = tf.keras.layers.Dropout(Dropout_tcnn,training=True)(model1)
         model1 = tf.keras.layers.BatchNormalization()(model1)
 
         model1 = tf.keras.layers.Conv2D(128, (3, 3), padding="SAME")(model1)
         model1 = tf.keras.activations.elu(model1, alpha)
-        model1 = tf.keras.layers.Dropout(Dropout_tcnn)(model1)
+        model1 = tf.keras.layers.Dropout(Dropout_tcnn,training=True)(model1)
         model1 = tf.keras.layers.MaxPool2D((2, 2))(model1)
         model1 = tf.keras.layers.BatchNormalization()(model1)
 
         model1 = tf.keras.layers.Conv2D(128, (3, 3), padding="SAME")(model1)
         model1 = tf.keras.activations.elu(model1, alpha)
-        model1 = tf.keras.layers.Dropout(Dropout_tcnn)(model1)
+        model1 = tf.keras.layers.Dropout(Dropout_tcnn,training=True)(model1)
         model1 = tf.keras.layers.MaxPool2D((2, 2))(model1)
         model1 = tf.keras.layers.BatchNormalization()(model1)
         
@@ -88,13 +88,13 @@ class fcn_quantile:
 
         pred1 = tf.keras.layers.Dense(25)(model1)
         pred1 = tf.keras.layers.LeakyReLU(alpha)(pred1)
-        pred1 = tf.keras.layers.Dropout(Dropout_tcnn)(pred1)
+        pred1 = tf.keras.layers.Dropout(Dropout_tcnn,training=True)(pred1)
         pred2 = tf.keras.layers.Dense(25)(model1)
         pred2 = tf.keras.layers.LeakyReLU(alpha)(pred2)
-        pred2 = tf.keras.layers.Dropout(Dropout_tcnn)(pred2)
+        pred2 = tf.keras.layers.Dropout(Dropout_tcnn,training=True)(pred2)
         pred3 = tf.keras.layers.Dense(25)(model1)
         pred3 = tf.keras.layers.LeakyReLU(alpha)(pred3)
-        pred3 = tf.keras.layers.Dropout(Dropout_tcnn)(pred3)
+        pred3 = tf.keras.layers.Dropout(Dropout_tcnn,training=True)(pred3)
 
         pred1 = tf.keras.layers.Dense(5)(pred1)
         pred1 = tf.keras.layers.LeakyReLU(alpha)(pred1)
