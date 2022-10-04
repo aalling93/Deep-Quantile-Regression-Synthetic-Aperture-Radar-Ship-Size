@@ -32,6 +32,8 @@ class Model:
         self.train_metadata = metadata
         self.train_target = target
 
+
+
     def model_load(
         self,
         which_model: str = "quantile_model",

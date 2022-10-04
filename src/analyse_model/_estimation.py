@@ -21,3 +21,14 @@ def get_estimates_all_inverse(model, images, metadata, normalisation_df):
     
     return targets_inverse
 
+def get_estimates_all(model, images, metadata):
+
+    predictions = np.array(model.predict([images,metadata[:,-2:]]))
+    predictions = np.transpose(predictions,(1,0,2))
+
+
+
+
+    
+    
+    return predictions
