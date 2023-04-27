@@ -1,0 +1,1 @@
+from ._model_quantile_simp import quantile_model
