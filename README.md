@@ -36,113 +36,6 @@ In The Figure below, we see t2o estimates from our model. One of which is clear 
 
 
 
-# Table Of Contents
--  [Introduction](#Introduction)
--  [Requirements](#Requirements)
--  [Install and Run](#Install-and-Run)
--  [Overview of results](#Overview-of-results)
--  [Model](#Model)
--  [Results](#Results)
--  [Code structure](#Code-structure)
--  [Usage](#Usage)
--  [Acknowledgments](#Acknowledgments)
-
-# Requirements
- <a class="anchor" id="Requirements"></a>
-
-- [pandas](https://github.com/pandas) (Data wrangling)
-- [tensorflow](https://github.com/tensorflow) (The models)
-- [tensorflow_probability](https://www.tensorflow.org/probability) (For probability stuff)
-- [sklearn](https://scikit-learn.org/stable/) (Used specifically for Cross Validation of the model)
-- [scipy](https://scipy.org) (stats when analysing the model)
-
-
-
-
-
-
-# Install and Run
- <a class="anchor" id="Install-and-Run"></a>
-
-
- 1. 
-  install Requirements
-
- 2. 
-Clone the Repo
- ```
- git clone https://github.com/aalling93/Deep-Quantile-Regression-Synthetic-Aperture-Radar-Ship-Size.git
- ```
-
-  3. 
- Profit
-
-# Overview of results
- <a class="anchor" id="Overview-of-results"></a>
-
-
-
-# Model
- <a class="anchor" id="Model"></a>
-
-Coming soon. 
-# Results
- <a class="anchor" id="Results"></a>
-
-Coming soon. 
-# Code structure
- <a class="anchor" id="Code-structure"></a>
-
-Coming soon. 
-------------
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks         
-    │                      
-    │                       
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
-
-<p><small>(Project structure based on cookiecutter)</small></p>
-
---------
-
-
-
 # Usage
  <a class="anchor" id="Usage"></a>
 
@@ -187,6 +80,5 @@ with Analyse_model(M.model.model) as anal:
  <a class="anchor" id="Acknowledgments"></a>
 Donno yet. 
 
- # Licence
- [![License: CC BY-NC 4.0](https://licensebuttons.net/l/by-nc/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc/4.0/)
+
 
