@@ -1,18 +1,7 @@
 
-<p align="center">
-  <img src="reports/readme_figs/banner.png" width="950" title="Project Banner">
-</p>
-
-[![DOI](https://zenodo.org/badge/259046250.svg)](https://zenodo.org/badge/latestdoi/259046250) 
-[![Coverage Status](https://coveralls.io/repos/github/aalling93/Deep-Quantile-Regression-Synthetic-Aperture-Radar-Ship-Size/badge.svg?branch=master)](https://coveralls.io/github/aalling93/Deep-Quantile-Regression-Synthetic-Aperture-Radar-Ship-Size?branch=master) 
-[![Build Status](https://app.travis-ci.com/aalling93/Deep-Quantile-Regression-Synthetic-Aperture-Radar-Ship-Size.svg?branch=master)](https://app.travis-ci.com/aalling/Deep-Quantile-Regression-Synthetic-Aperture-Radar-Ship-Size) 
-![Repo Size](https://img.shields.io/github/repo-size/aalling93/Deep-Quantile-Regression-Synthetic-Aperture-Radar-Ship-Size) 
-[![Known Vulnerabilities](https://snyk.io/test/github/aalling93/Deep-Quantile-Regression-Synthetic-Aperture-Radar-Ship-Size//badge.svg)](https://snyk.io/test/github/aalling93/Deep-Quantile-Regression-Synthetic-Aperture-Radar-Ship-Size/)
-![Python](https://img.shields.io/badge/python-3.9-blue.svg)
-
 Kristian Aalling Sørensen
 
-kaaso@space.dtu.dk
+
 
 # Brief Description
  <a class="anchor" id="Introduction"></a>
